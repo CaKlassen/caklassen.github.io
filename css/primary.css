@@ -1,0 +1,360 @@
+/* Fonts */
+
+@font-face {
+    font-family: Header;
+    src: url(LiberationSans.ttf);
+}
+
+@font-face {
+    font-family: Body;
+    src: url(Gidole.ttf);
+}
+
+@font-face {
+    font-family: Nav;
+    src: url(Gidole.ttf);
+}
+
+
+/* General */
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: "Body", sans-serif, arial;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+
+/* Opening */
+
+#opening
+{
+	width: 100%;
+	height: 100%;
+	float: left;
+	display: block;
+	background: #000 url("../images/intro.png") top center no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#title
+{
+	position: absolute;
+	width: 800px;
+	text-align: center;
+
+	left: calc(50% - 400px);
+}
+
+#title > img
+{
+	margin-bottom: 25px;
+	width: 25%;
+	border-radius: 50%;
+}
+
+#title > h1
+{
+	font-family: "Header", sans-serif, arial;
+	text-transform: uppercase;
+	font-size: 4em;
+	color: #FFF;
+	text-shadow: 4px 4px #000;
+	margin: 0;
+}
+
+#title > h2
+{
+	font-family: "Header", sans-serif, arial;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #52A650;
+	text-shadow: 4px 4px #111;
+	margin: 0;
+}
+
+
+/* Navigation */
+
+#navbar
+{
+	width:100%;
+	height: 60px;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.85);
+	border-bottom: 1px solid #888;
+	box-shadow: 0px 0px 75px 25px #000;
+}
+
+.navbar-locked
+{
+	position: absolute;
+	bottom: -1px;
+}
+
+.navbar-unlocked
+{
+	position: fixed;
+}
+
+#nav
+{
+	min-width: 700px;
+	height: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#nav > div
+{
+	height: 100%;
+	margin: 15px 20px;
+	display: inline-block;
+}
+
+#nav div a
+{
+	font-family: "Nav", sans-serif, arial;
+	font-size: 1.75em;
+	font-weight: 1;
+	color: #FFF;
+	text-transform: uppercase;
+	transition: color 0.5s;
+}
+
+#nav div a:hover
+{
+	color: #32F039;
+}
+
+
+/* Content */
+
+#content
+{
+
+	background: #000 url("../images/background.png");
+	
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+.block
+{
+	float: left;
+	display: block;
+	margin-top: 150px;
+	padding-bottom: 40px;
+	width: 100%;
+	background: #111;
+	border-top: 2px solid #888;
+	border-bottom: 2px solid #888;
+	box-shadow: 0px 0px 100px 25px #000;
+}
+
+.inner
+{
+	width: 65%;
+	margin: auto auto;
+}
+
+.block h1
+{
+	font-family: "Header", sans-serif, arial;
+	text-transform: uppercase;
+	font-size: 3em;
+	color: #FFF;
+	text-align: center;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+.block h2
+{
+	font-family: "Header", sans-serif, arial;
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #52A650;
+	margin-bottom: 20px;
+}
+
+.block p
+{
+	font-family: "Body", sans-serif, arial;
+	font-size: 1.5em;
+	color: #CCC;
+	margin-bottom: 64px;
+}
+
+
+/* About */
+
+.icon
+{
+	display: block;
+	width: 144px;
+	height: 64px;
+	margin-bottom: 32px;
+}
+
+.icon div
+{
+	font-family: "Body", sans-serif, arial;
+	font-size: 1.25em;
+	color: #32F039;
+	width: 100%;
+	height: 100%;
+	text-align: right;
+	padding-top: 22px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.icon div:hover
+{
+	opacity: 1;
+}
+
+.leftcolumn
+{
+	float: left;
+	max-width: 70%;
+}
+
+.rightcolumn
+{
+	max-width: 30%;
+	float: right;
+}
+
+#li_icon
+{
+	background: url("../images/linkedin_icon.png") right top no-repeat;
+	background-size: 64px 64px;
+	transition: background-position 0.5s;
+}
+
+#li_icon:hover
+{
+	background-image: url("../images/linkedin_icon_h.png");
+	background-position: 0px 0px;
+}
+
+#mn_icon
+{
+	background: url("../images/magnesiumninja_icon.png") right top no-repeat;
+	background-size: 64px 64px;
+	transition: background-position 0.5s;
+}
+
+#mn_icon:hover
+{
+	background-image: url("../images/magnesiumninja_icon_h.png");
+	background-position: 0px 0px;
+}
+
+#tw_icon
+{
+	background: url("../images/twitter_icon.png") right top no-repeat;
+	background-size: 64px 64px;
+	transition: background-position 0.5s;
+}
+
+#tw_icon:hover
+{
+	background-image: url("../images/twitter_icon_h.png");
+	background-position: 0px 0px;
+}
+
+
+/* Games & Projects */
+
+.images
+{
+	width: 100%;
+	text-align: center;
+}
+
+.images a
+{
+	position: relative;
+}
+
+.game
+{
+	display: inline-block;
+	width: 30%;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 60px;
+}
+
+.game img
+{
+	width: 100%;
+	border: 2px solid #FFF;
+	opacity: 0.4;
+	transition: opacity 0.5s;
+}
+
+.game:hover img
+{
+	opacity: 1;
+}
+
+.game span
+{
+	font-family: "Body", sans-serif, arial;
+	font-size: 1.25em;
+	color: #32F039;
+	position: absolute;
+	top: 90%;
+	left: 2px;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s, top 0.5s;
+}
+
+.game:hover span
+{
+	opacity: 1;
+	top: 105%;
+}
+
+
+/* Footer */
+
+.footer
+{
+	float: left;
+	display: block;
+	margin-top: 100px;
+	width: 100%;
+	background: #111;
+	border-top: 2px solid #888;
+	box-shadow: 0px 0px 100px 25px #000;
+}
+
+.footer p
+{
+	text-align: center;
+	font-family: "Body", sans-serif, arial;
+	font-size: 1em;
+	color: #888;
+
+}

@@ -29,7 +29,7 @@ function navigation()
 	$("#navbar").addClass("navbar-unlocked");
 
 	// Set the position of the title text
-	$("#ptitle").css("top", $(window).height() / 2 - 90);
+	$("#ptitle").css("top", $(window).height() / 2 - $(window).height() * 0.1);
 
 
 	// Set the new scroll functionality
@@ -39,7 +39,7 @@ function navigation()
 		var percent = ($(window).scrollTop() / $(window).height());
 
 		// Scroll the title information up faster than the window
-		$("#ptitle").css("top", (1 - percent) * ($(window).height() / 2 - 90));
+		$("#ptitle").css("top", (1 - percent) * ($(window).height() / 2 - $(window).height() * 0.1));
 
 		// Offset the background scrolling
 		var scrollOffset = $(document).scrollTop();

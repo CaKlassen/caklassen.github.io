@@ -25,6 +25,7 @@ html
 
 body
 {
+	min-width: 800px;
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -94,6 +95,7 @@ a
 	float: left;
 	display: block;
 	background: #111 url("../images/intro.png") center no-repeat;
+	background-size: 100%;
 	overflow: hidden;
 	border-bottom: 2px solid #888;
 }
@@ -239,7 +241,18 @@ a
 	font-family: "Body", sans-serif, arial;
 	font-size: 1.5em;
 	color: #CCC;
-	margin-bottom: 64px;
+	margin-bottom: 16px;
+}
+
+.block a
+{
+	color: #FFF;
+	transition: color 0.25s;
+}
+
+.block a:hover
+{
+	color: #32F039;
 }
 
 
@@ -341,7 +354,7 @@ a
 	position: relative;
 }
 
-.game
+.game, .p-image
 {
 	display: inline-block;
 	width: 30%;
@@ -350,15 +363,16 @@ a
 	margin-bottom: 60px;
 }
 
-.game img
+.game img, .p-image img
 {
 	width: 100%;
+	height: 100%;
 	border: 2px solid #FFF;
 	opacity: 0.4;
 	transition: opacity 0.5s;
 }
 
-.game:hover img
+.game:hover img, .p-image:hover img
 {
 	opacity: 1;
 }

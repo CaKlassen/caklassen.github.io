@@ -10,7 +10,7 @@ $(document).ready(function()
 
 function setHeadImage(image)
 {
-	$("#phead").css("background-image", "url(../images/games/" + image + ")");
+	$("#phead").css("background-image", "url(../images/" + image + ")");
 }
 
 
